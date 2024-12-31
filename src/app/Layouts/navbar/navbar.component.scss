@@ -27,3 +27,9 @@
         display: flex;
     }
 }
+
+@media (max-width :900px){
+    .leftNav img{
+        width: 60px !important;
+    }
+}
