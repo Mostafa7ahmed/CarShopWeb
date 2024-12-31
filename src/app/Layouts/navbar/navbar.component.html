@@ -12,7 +12,7 @@
    
         </ul>
         <div class="icon">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
         </div>
 
 
@@ -20,3 +20,20 @@
 
     
 </nav>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+
+
+    <div class="routeLink">
+        <ul class="links m-0">
+            <li><a routerLink="/Home" routerLinkActive="active">Home</a></li>
+            <li><a routerLink="/about-us" routerLinkActive="active">About Us</a></li>
+            <li><a routerLink="/car-type" routerLinkActive="active">Car Types</a></li>
+            <li><a routerLink="contact-us" routerLinkActive="active">Contact Us</a></li>
+        </ul>
+    </div>
+
+  </div>

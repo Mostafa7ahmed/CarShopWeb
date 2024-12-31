@@ -58,3 +58,15 @@
  color: #fff;
 
 }
+@media (max-width: 600px) {
+    .headerCar {
+        flex: none;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .sealct{
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+    }
+}
