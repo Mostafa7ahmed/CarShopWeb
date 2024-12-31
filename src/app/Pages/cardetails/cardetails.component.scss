@@ -8,3 +8,13 @@
 ;
     justify-content: center;
 }
+
+@media (max-width: 900px) {
+    .cardetails{
+        flex-wrap: wrap;
+    }
+    .cardetails .left{
+        width: 100% !important;
+    }
+
+}
