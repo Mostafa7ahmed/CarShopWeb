@@ -9,3 +9,21 @@
 .rightNav ul li .active-link{
     color: #bc792b;
 }
+.icon i{
+
+    color: #bc792b;
+    display: none;
+}
+
+
+@media (max-width :900px){
+ 
+    .rightNav  ul {
+        display: none !important;
+    }
+    .icon i{
+
+        color: #bc792b;
+        display: flex;
+    }
+}
