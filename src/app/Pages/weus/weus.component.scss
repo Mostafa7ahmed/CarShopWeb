@@ -1,0 +1,49 @@
+
+.about .about-Content{
+    padding: 20px;
+}
+.about img{
+    border-radius: 20px 150px 20px  150px ;
+}
+.about .about-Content h3{
+    color: white;
+    font-family: "Poppins", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.7em;
+    font-weight: 600;
+}
+.about .about-Content span{
+    font-weight: 500;
+    font-family: "Poppins", Sans-serif;
+
+
+}
+.about .about-Content span > span{
+    font-weight: 800;
+}
+.about .about-Content p{
+    font-size: 20px;
+
+}
+.about .about-Content h3{
+    color: #bc792b;
+}
+.form-control{
+    padding: 15px 15px;
+    border-radius: 10px;
+    border: 1px solid #bc792b;
+}
+.form-control:focus{
+    border: 1px solid #bc792b;
+    box-shadow: none;
+}
+.about-Content .btn{
+    padding: 20px ;
+    background-color: #bc792b;
+    color: white;
+    margin-top: 15px;
+    border-radius: 10px;
+   font-size: 18px;
+   font-weight: 600;
+}

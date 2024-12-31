@@ -1,0 +1,86 @@
+<div class="allcar">
+    <div class="banner mb-3">
+        <img src="Images/Group 503.png" alt="" width="100%">
+    </div>
+
+    <div class="showCar bg-light p-2 my-3 rounded-3">
+
+        <div class="headerCar d-flex justify-content-between p-2 align-items-center">
+            <h2>Car Type</h2>
+            <div class="sealct d-flex  gap-5 ">
+
+                <div class="btn-group">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Small button
+                    </button>
+                    <ul class="dropdown-menu">
+
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Small button
+                    </button>
+                    <ul class="dropdown-menu">
+
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="allcars d-flex justify-content-center align-items-center  flex-wrap gap-4 my-5">
+               @for (carType of carTypes; track $index) {
+                <div class="card p-3 shadow-sm  mb-3 " >
+                    <img src="Images/Q3-x1-qygadzafd20tzx0bj6vykwr33j4lptq80h7x7q2r98.webp" alt="" width="300">
+        
+                     <div class="Content  p-3">
+                        <h2>Mitsubishi Outlander 2024</h2>
+        
+                        <h5>AED 250/Dey</h5>
+                        <p >dddddddddddddddddddddd</p>
+                        <div class="icons d-flex justify-content-between align-items-center gap-2">
+                            <p><i class="fa-solid fa-car mx-2"></i> <span>BMW</span></p>
+                            <p><i class="fa-solid fa-door-closed  mx-2"></i> <span>BMW</span></p>
+                            <p><i class="fa-solid fa-couch  mx-2"></i> <span>BMW</span></p>
+            
+            
+                        </div>
+    
+                        <div class="contact  py-3 d-flex justify-content-between align-items-center">
+                            <a   routerLink="/car-details" class="iconContact">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+    
+                            <div class="iconContact">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+    
+                        </div>
+                     </div>
+        
+                </div>
+    
+    
+                 
+               }
+     
+     
+     
+
+        </div>
+
+
+    </div>
+</div>

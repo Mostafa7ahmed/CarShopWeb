@@ -1,0 +1,53 @@
+<div class="typeCar p-5 bg-light">
+    
+    <h3 class="text-center">SUVs For Rent in Dubai</h3>
+
+    <div class="cards">
+
+        <owl-carousel-o [options]="customOptions">
+
+            @for ( category of carType ; track $index) {
+                <ng-template carouselSlide >
+    
+                    <div class="card p-3 shadow-sm  mx-4 mb-3">
+                        <img src="Images/Q3-x1-qygadzafd20tzx0bj6vykwr33j4lptq80h7x7q2r98.webp" alt="">
+            
+                         <div class="Content  p-3">
+                            <h2>Mitsubishi Outlander 2024</h2>
+            
+                            <h5>AED 250/Dey</h5>
+                            <p >dddddddddddddddddddddd</p>
+                            <div class="icons d-flex justify-content-between align-items-center gap-2">
+                                <p><i class="fa-solid fa-car mx-2"></i> <span>BMW</span></p>
+                                <p><i class="fa-solid fa-door-closed  mx-2"></i> <span>BMW</span></p>
+                                <p><i class="fa-solid fa-couch  mx-2"></i> <span>BMW</span></p>
+                
+                
+                            </div>
+
+                            <div class="contact  py-3 d-flex justify-content-between align-items-center">
+                                <a   routerLink="/car-details" class="iconContact">
+                                    <i class="fa-regular fa-eye"></i>
+                                </a>
+
+                                <div class="iconContact">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+
+                            </div>
+                         </div>
+            
+                    </div>
+                  </ng-template>
+              
+            }
+        
+          </owl-carousel-o>
+    
+    </div>
+
+    <div  class="allCars d-flex justify-content-center align-items-center my-3">
+        <button  routerLink="/car-type" class="btn"> All Cars</button>
+    </div>
+
+</div>
