@@ -21,3 +21,24 @@
     }
   
 }
+@media (max-width :900px){
+ 
+    .back-video{
+
+ 
+        min-height: 60%;
+        background-position: center;
+        background-size: cover;
+ 
+    }
+    .banner[_ngcontent-ng-c3612454780] {
+        height: 70vh;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .banner[_ngcontent-ng-c3612454780] {
+        height: 50vh;
+    }
+}
