@@ -1,6 +1,8 @@
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Car } from '../../Core/Interface/car';
+import { AllcarService } from '../../Core/services/allcar.service';
 @Component({
   selector: 'app-cartype',
   standalone: true,
@@ -8,9 +10,21 @@ import { RouterLink } from '@angular/router';
   templateUrl: './cartype.component.html',
   styleUrl: './cartype.component.scss'
 })
-export class CartypeComponent {
+export class CartypeComponent implements OnInit{
 
-  carType =[1,2,3,4,5,6,7,8]
+  carType:Car[] =[];
+
+  private _allcar = inject(AllcarService)
+  
+    ngOnInit(): void {
+      this.loadData();
+      
+    }
+    async loadData() {
+      this.carType = (await this._allcar.getTableData()).slice(0,8);
+      console.log(this.carType)
+  
+    }
 
 
     customOptions: OwlOptions = {

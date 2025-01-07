@@ -2,12 +2,15 @@
 
     <h3 class="text-center my-4">Browse by Body</h3>
     <div class="types d-flex justify-content-center align-items-center flex-wrap  gap-3">
-            @for (bodyone of body; track $index) {
-                <div class="d-flex flex-column align-items-center gap-5">
-                    <img src="Images/monthy2.webp" alt="">
-                    <h5 class="text-center">Browse</h5>
-                </div>
-            
+            @for (bodyone of Bodys; track bodyone.id) {
+              
+                <a routerLink="/car-type" >
+                    <div class="d-flex flex-column align-items-center gap-5">
+                        <img [src]="bodyone.image" alt="">
+                        <h5 class="text-center">{{bodyone.name}}</h5>
+                    </div>
+                
+                </a>
                 
               
             }

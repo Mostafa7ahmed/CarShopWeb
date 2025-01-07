@@ -6,43 +6,33 @@
 
         <owl-carousel-o [options]="customOptions">
 
-            @for ( category of carType ; track $index) {
+            @for ( car of carType ; track car.id) {
                 <ng-template carouselSlide >
     
-                    <div class="card p-3 shadow-sm  mx-4 mb-3">
-                        <img src="Images/Q3-x1-qygadzafd20tzx0bj6vykwr33j4lptq80h7x7q2r98.webp" alt="">
-            
-                         <div class="Content  p-3">
-                            <h2>Mitsubishi Outlander 2024</h2>
-            
-                            <h5>AED 250/Dey</h5>
-                            <p >dddddddddddddddddddddd</p>
+                    <a [routerLink]="['/car-details', car.id]"  class="card p-3 shadow-sm  mx-4 mb-3">
+                        <img [src]="car.images" alt="">
+                        <div class="Content p-3">
+                            <h2 class="mt-2">{{car.name}}</h2>
+                            <h4>{{car.price_day}}/Day AED</h4>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap my-2">
+                              <h5>{{car.price_week}}/Week AED</h5>
+                              <h5>{{car.price_month}}/Month AED</h5>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                              <p>Color: <span>{{car.color}}</span></p>
+                              <p>Body: <span>{{car.body}}</span></p>
+                            </div>
                             <div class="icons d-flex justify-content-between align-items-center gap-2">
-                                <p><i class="fa-solid fa-car mx-2"></i> <span>BMW</span></p>
-                                <p><i class="fa-solid fa-door-closed  mx-2"></i> <span>BMW</span></p>
-                                <p><i class="fa-solid fa-couch  mx-2"></i> <span>BMW</span></p>
-                
-                
-                            </div>
+                              <p><i class="fa-solid fa-car mx-2"></i> <span>{{car.brand}}</span></p>
+                              <p><i class="fa-solid fa-door-closed mx-2"></i> <span>{{car.door_num}}</span></p>
+                              <p><i class="fa-solid fa-couch mx-2"></i> <span>{{car.chair_num}}</span></p>
+                            </div>         
+                       </div>
 
-                            <div class="contact  py-3 d-flex justify-content-between align-items-center">
-                                <a   routerLink="/car-details" class="iconContact">
-                                    <i class="fa-regular fa-eye"></i>
-                                </a>
-
-                                <div   class="iconContact">
-                                    <a href="https://wa.me/971565555471?text=مرحبا%20أريد%20التحدث%20معك">
-                                        <i class="fa-brands fa-whatsapp"></i>
-
-                                    </a>
-
-                       
-                                </div>
-
-                            </div>
-                         </div>
             
-                    </div>
+               
+            
+                    </a>
                   </ng-template>
               
             }

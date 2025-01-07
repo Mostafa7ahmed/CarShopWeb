@@ -1,14 +1,17 @@
+import { Brand } from './../../Core/Interface/Brand';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { BrandService } from '../../Core/services/brand.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-slider',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [CarouselModule , RouterLink],
   templateUrl: './slider.component.html',
   styleUrl: './slider.component.scss'
 })
-export class SliderComponent {
+export class SliderComponent implements OnInit {
 
 
   customOptions: OwlOptions = {
@@ -40,19 +43,17 @@ export class SliderComponent {
     nav: false,
   }
 
-  arrLogo:string[]=
-  [
-   'Images/bmw.svg',
-   'Images/bmw.svg',
+  brands:Brand[]=[];
+  
 
-   'Images/bmw.svg',
-   'Images/bmw.svg',
-   'Images/bmw.svg',
-   'Images/bmw.svg',
-   'Images/bmw.svg',
-   'Images/bmw.svg',
-   'Images/bmw.svg',
+private _brandService = inject(BrandService)
 
-   
-  ]
+  ngOnInit(): void {
+    this.loadData();
+    
+  }
+  async loadData() {
+    this.brands = await this._brandService.getTableData();
+
+  }
 }

@@ -20,7 +20,7 @@ export class AllcarComponent implements OnInit {
   }
 
   async loadData() {
-    this.tableData = await this.supabaseService.getTableData();
+    this.tableData = await this.supabaseService.getTableData({ name: '' ,price_day: 0 });
     console.log(this.tableData)
   }
 

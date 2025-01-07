@@ -3,24 +3,24 @@ import { createClient, SupabaseClient } from '@supabase/supabase-js';
 import { environment } from '../../../environments/environment';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
-export class AllcarService {
+export class BodyService {
   private supabase: SupabaseClient;
 
   constructor() {
     this.supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
-  }
 
-  async getTableData(filter?: { name?: string; price_day?: number }): Promise<any[]> {
+   }
+
+
+
+  async getTableData(filter?: { name?: string}): Promise<any[]> {
     try {
-      let query = this.supabase.from('Car').select('*');
+      let query = this.supabase.from('Body').select('*');
       if (filter) {
         if (filter.name) {
           query = query.eq('name', filter.name);
-        }
-        if (filter.price_day) {
-          query = query.eq('price_day', filter.price_day);
         }
       }
 
@@ -39,12 +39,12 @@ export class AllcarService {
   }
 
 
-  async getCar(carId: number): Promise<any> {
+  async getBody(BodyId: number): Promise<any> {
     try {
       const { data, error } = await this.supabase
-        .from('Car')
+        .from('Body')
         .select('*')
-        .eq('id', carId)
+        .eq('id', BodyId)
         .single();
 
       if (error) {

@@ -3,13 +3,15 @@
 
     <owl-carousel-o [options]="customOptions">
 
-        @for ( category of arrLogo ; track $index) {
+        @for ( brand of brands ; track brand.id) {
             <ng-template carouselSlide >
 
-                <div class="category mx- 3 p-2  shadow-sm">
-                    <img [src]="category" [alt]="category"  class="w-100 " height="150px">
-
-                </div>
+                <a [routerLink]="['/car-type',brand.name]">
+                    <div class="category mx- 3 p-2  shadow-sm">
+                        <img [src]="brand.image" [alt]="brand.name"  class="w-100 " height="150px">
+    
+                    </div>
+                </a>
               </ng-template>
           
         }
