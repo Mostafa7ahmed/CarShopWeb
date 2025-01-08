@@ -4,7 +4,7 @@
     <div class="types d-flex justify-content-center align-items-center flex-wrap  gap-3">
             @for (bodyone of Bodys; track bodyone.id) {
               
-                <a routerLink="/car-type" >
+                <a [routerLink]="['/car-type/body/',bodyone.name]" >
                     <div class="d-flex flex-column align-items-center gap-5">
                         <img [src]="bodyone.image" alt="">
                         <h5 class="text-center">{{bodyone.name}}</h5>

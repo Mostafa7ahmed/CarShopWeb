@@ -1,32 +1,13 @@
 <div class="cardetails d-flex gap-5 p-3 ">
     <div class="left w-50">
-        <div class="w-100">
-            <owl-carousel-o [options]="customOptions">
+        <img [src]="car.images" width="100%" alt="" class="rounded-4" loading="lazy">
 
-                <ng-template carouselSlide >
-        
-                    <img src="Images/Jeep-2024-1024x853.webp" alt="" class="rounded-4" loading="lazy">
-
-                  </ng-template>
-                  <ng-template carouselSlide >
-        
-                    <img src="Images/Jeep-2024-1024x853.webp" alt="" class="rounded-4" loading="lazy">
-
-                  </ng-template>
-                  <ng-template carouselSlide >
-        
-                    <img src="Images/Jeep-2024-1024x853.webp" alt="" class="rounded-4" loading="lazy">
-
-                  </ng-template>
-            
-              </owl-carousel-o>
-        </div>
 
 
     </div>
-    <div class="right p-4 bg-light rounded-3 flex-grow-1  ">
-        <div class="Details d-flex justify-content-between align-items-center">
-            <h3>Jeep Wrangler 2024</h3>
+    <div class="right p-4 rounded-3  flex-grow-1 bg-light">
+        <div class="Details  d-flex justify-content-between align-items-center mb-3">
+            <h3>{{car.name}}</h3>
             <div   class="Icon">
                 <a href="https://wa.me/971565555471?text=مرحبا%20أريد%20التحدث%20معك">
                     <i class="fa-brands fa-whatsapp"></i>
@@ -36,6 +17,34 @@
    
             </div>
         </div>
+
+     <div class="Content">
+        <div   class="d-flex justify-content-between align-items-center my-3 mt-5">
+            <h4>Daily</h4>
+            <h5>{{car.price_day}}/Day AED</h5>
+
+        </div>
+        <div   class="d-flex justify-content-between align-items-center my-3 mt-5">
+            <h4>Weekly</h4>
+            <h5 class="my-3">{{car.price_week}}/Week AED</h5>
+
+        </div>
+        <div   class="d-flex justify-content-between align-items-center my-5 ">
+            <h4>Month</h4>
+            <h5 class="my-3">{{car.price_month}}/Month AED</h5>
+
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center flex-wrap mb-5">
+          <p>Color: <span>{{car.color}}</span></p>
+          <p>Body: <span>{{car.body}}</span></p>
+        </div>
+        <div class="icons d-flex justify-content-between align-items-center gap-2">
+          <p><i class="fa-solid fa-car mx-2"></i> <span>{{car.brand}}</span></p>
+          <p><i class="fa-solid fa-door-closed mx-2"></i> <span>{{car.door_num}}</span></p>
+          <p><i class="fa-solid fa-couch mx-2"></i> <span>{{car.chair_num}}</span></p>
+        </div>  
+     </div>       
 
     </div>
 </div>

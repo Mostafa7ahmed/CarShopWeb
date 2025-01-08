@@ -8,10 +8,14 @@
 .typeCar{
     padding: 10px 5px ;
 }
+.cards{
+    justify-content: space-between;
+}
 .card{
     
     border: none;
     border-radius: 20px;
+    width: 350px !important;
 }
 .card img{
     border-radius: 15px;
@@ -28,11 +32,19 @@
     font-weight: 600;
     line-height: 1.7em;
 }
-.Content h5{
+.Content h4{
     color: #bc792b;
     font-size: 18px;
     font-weight: 500;
     margin: 8px 0;
+}
+.Content h5{
+     
+    color: #000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.7em;
 }
 .icons p i{
     color: #fff;

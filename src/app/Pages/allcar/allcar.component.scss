@@ -1,75 +1,165 @@
-.headerCar h2{
-    color: #bc792b;
-    font-family: "Poppins", Sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 1.7em;
+.headerCar h2 {
+  color: #bc792b;
+  font-family: "Poppins", Sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.7em;
 }
-.card{
-    
-    border: none;
-    border-radius: 20px;
+.card {
+  border: none;
+  border-radius: 20px;
 }
-.card img{
-    border-radius: 15px;
-
+.card img {
+  border-radius: 15px;
 }
 
-.Content h2{
-     
-    color: #000;
-    font-family: "Poppins", Sans-serif;
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 1.7em;
+.Content h2 {
+  color: #000;
+  font-family: "Poppins", Sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.7em;
 }
-.Content h5{
-    color: #bc792b;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 8px 0;
+.Content h4 {
+  color: #bc792b;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 8px 0;
 }
-.icons p i{
-    color: #fff;
-    padding: 5px;
-    background-color: #bc792b;
-    border-radius: 5px;
+.icons p i {
+  color: #fff;
+  padding: 5px;
+  background-color: #bc792b;
+  border-radius: 5px;
 }
-.allCars .btn{
-    background-color: #bc792b;
-    padding: 10px 30px;
-    color: #fff;
-    outline: none;
-    border-radius: 7px;
+.allCars .btn {
+  background-color: #bc792b;
+  padding: 10px 30px;
+  color: #fff;
+  outline: none;
+  border-radius: 7px;
 }
-.contact .iconContact{
-    padding: 10px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #bc792b;
-    width: 50px;
-    height: 50px;
+.contact .iconContact {
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bc792b;
+  width: 50px;
+  height: 50px;
+}
 
+.Content h2 {
+  color: #000;
+  font-family: "Poppins", Sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.7em;
 }
-.contact .iconContact i{
- font-size: 20px;
- color: #fff;
+.Content h5 {
+  color: #000;
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7em;
+}
 
+.contact .iconContact i {
+  font-size: 20px;
+  color: #fff;
 }
-.iconContact{
+.iconContact {
+  cursor: pointer;
+}
+.notFound {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+}
+.notFound h3 {
+  color: #bc792b;
+  font-family: "Poppins", Sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.7em;
+}
+.notFound img {
+  width: 400px;
+}
+.dropdown-menu li{
     cursor: pointer;
 }
+
+
+.relative {
+    position: relative;
+  }
+  
+  #label-input {
+    transition: all 0.1s ease-in-out;
+    position: absolute;
+    top: 30%;
+    left: 18px;
+    transform: scale(0.95);
+    opacity: 1;
+    pointer-events: none;
+    color: #5f5d5dee;
+  }
+  
+  .input-base {
+    border-radius: 6px;
+  }
+  
+ .inputFloating:focus ~ label#label-input,
+.inputFloating:not(:placeholder-shown) ~ #label-input {
+    top: -27% !important;
+    left: 4px !important;
+    transform: scale(0.8);
+    background: white;
+    color: var(--gray2);
+    font-size: 16px;
+    padding: 0px 18px;
+    opacity: 1;
+  }
+  
+  .inputFloating {
+    transition: outline 0.2s ease;
+    font-size: 1rem;
+    outline-color: var(--button-text);
+    outline: unset;
+    border: 1px solid #bc792b;
+    color: #bc792b;
+    padding: 10px 10px ;
+    width: 100%;
+
+    border-radius: 8px ;
+
+
+  }
+
+  
+.form-control:focus{
+    padding: 10px;
+    border: 1px solid var(--gray2)  !important;
+    box-shadow: none !important;
+
+}
 @media (max-width: 600px) {
-    .headerCar {
-        flex: none;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .sealct{
-        justify-content: space-between;
-        width: 100%;
-        padding: 10px;
-    }
+  .headerCar {
+    flex: none;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .sealct {
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+  .notFound img {
+    width: 90%;
+  }
 }

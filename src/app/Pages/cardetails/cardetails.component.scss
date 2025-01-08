@@ -12,6 +12,30 @@
     color: white;
 
 }
+.Content h4{
+    color: #bc792b;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+.Content h5{
+  color: #222;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 8px 0;
+}
+.Content p span{
+  color: #bc792b;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 8px 0;
+}
+.icons p i{
+    color: #fff;
+    padding: 5px;
+    background-color: #bc792b;
+    border-radius: 5px;
+}
 @media (max-width: 900px) {
     .cardetails{
         flex-wrap: wrap;

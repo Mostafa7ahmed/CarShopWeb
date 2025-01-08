@@ -12,15 +12,15 @@ export class AllcarService {
     this.supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
   }
 
-  async getTableData(filter?: { name?: string; price_day?: number }): Promise<any[]> {
+  async getTableData(filter?: { body?: string; Brand?: string }): Promise<any[]> {
     try {
       let query = this.supabase.from('Car').select('*');
       if (filter) {
-        if (filter.name) {
-          query = query.eq('name', filter.name);
+        if (filter.body) {
+          query = query.eq('body', filter.body);
         }
-        if (filter.price_day) {
-          query = query.eq('price_day', filter.price_day);
+        if (filter.Brand) {
+          query = query.eq('brand', filter.Brand);
         }
       }
 

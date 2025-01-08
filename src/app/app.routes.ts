@@ -10,16 +10,16 @@ export const routes: Routes = [
   {
     path: '',
     redirectTo: 'Home',
-    pathMatch: 'full', // Ensure exact match for redirection
+    pathMatch: 'full',
   },
   {
     path: 'Home',
-    title: 'Home', // Define the title for the Home route
+    title: 'Home', 
     component: HomeComponent,
   },
   {
     path: 'about-us',
-    title: 'About Us', // Consistent capitalization for titles
+    title: 'About Us', 
     component: WeusComponent,
   },
   {
@@ -33,8 +33,13 @@ export const routes: Routes = [
     component: AllcarComponent,
   },
   {
-    path: 'car-type/:name',
-    title: 'Car Type Details', // Title for specific car type
+    path: 'car-type/:Brand',
+    title: 'Car Type Details', 
+    component: AllcarComponent,
+  },
+  {
+    path: 'car-type/body/:Body',
+    title: 'Car Type Details', 
     component: AllcarComponent,
   },
   {
