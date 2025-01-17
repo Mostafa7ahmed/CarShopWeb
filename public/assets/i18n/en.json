@@ -72,7 +72,12 @@
         "Month":"Month",
         "Color":"Color",
         "Body":"Body"
-    }
+    },
+    "contact":{
+        "textPhone":"Call Us",
+        "textWhatsapp":"Chat with Us"
 
+    }
+ 
 
 }

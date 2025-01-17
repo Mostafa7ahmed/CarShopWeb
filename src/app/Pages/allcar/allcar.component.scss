@@ -8,6 +8,7 @@
 .card {
   border: none;
   border-radius: 20px;
+  text-align: end;
 }
 .card img {
   border-radius: 15px;
@@ -167,6 +168,10 @@
     flex: none;
     flex-wrap: wrap;
     gap: 20px;
+  }
+  .card {
+    width: 100% !important;
+
   }
   .sealct {
     justify-content: space-between;

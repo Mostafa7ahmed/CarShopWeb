@@ -14,3 +14,10 @@
 .types a h5{
     color: #000;
 }
+
+@media (max-width :450px){
+    .types div{
+        width: 90%;
+    }
+    
+}

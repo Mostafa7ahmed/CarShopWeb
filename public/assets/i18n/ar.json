@@ -64,5 +64,11 @@
     "Month": "شهري",
     "Color": "اللون",
     "Body": "الهيكل"
+},
+"contact":{
+    "textPhone": "اتصل بينا",
+    "textWhatsapp": "تواصل معانا"
+
+
 }
 }
