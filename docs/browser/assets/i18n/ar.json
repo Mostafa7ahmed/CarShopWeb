@@ -1,51 +1,61 @@
 {
-    "navbar":{
-        "Home" : "الصفحه الرئيسه",
-        "About" :" من نحن",
-        "CarType":"انواع السيارت",
-        "ContactUS":"تواصل معانا",
-        "lang" :"ع"
+  "navbar": {
+    "Home": "الصفحه الرئيسه",
+    "About": " من نحن",
+    "CarType": "انواع السيارت",
+    "ContactUS": "تواصل معانا",
+    "lang": "ع"
+  },
+  "Brand": {
+    "Brands": "العلامات التجارية المتميزة"
+  },
+  "Bodys": {
+    "Body": "حجم السيارت"
+  },
+  "Car": {
+    "car": " متاح الآن للإيجار"
+  },
+  "Footer": {
+    "Subscribe": {
+      "imageAlt": "شعار الموقع",
+      "placeholder": "البريد الإلكتروني",
+      "button": "اشترك"
     },
-    "Brand":{
-        "Brands":"العلامات التجارية المتميزة"
-        
+    "Pages": {
+      "title": "الصفحات",
+      "links": {
+        "Home": "الرئيسية",
+        "AboutUs": "من نحن",
+        "CarTypes": "أنواع السيارات",
+        "ContactUs": "اتصل بنا"
+      }
     },
-    "Bodys":{
-        "Body":"حجم السيارت"
-        
+    "Help": {
+      "title": "المساعدة",
+      "links": {
+        "FAQ": "الأسئلة الشائعة",
+        "TermsAndConditions": "الشروط والأحكام",
+        "SupportPolicy": "سياسة الدعم",
+        "Privacy": "الخصوصية"
+      }
     },
-    "Car":{
-        "car":" متاح الآن للإيجار"
-        
-    },
-    "Footer": {
-        "Subscribe": {
-            "imageAlt": "شعار الموقع",
-            "placeholder": "البريد الإلكتروني",
-            "button": "اشترك"
-        },
-        "Pages": {
-            "title": "الصفحات",
-            "links": {
-                "Home": "الرئيسية",
-                "AboutUs": "من نحن",
-                "CarTypes": "أنواع السيارات",
-                "ContactUs": "اتصل بنا"
-            }
-        },
-        "Help": {
-            "title": "المساعدة",
-            "links": {
-                "FAQ": "الأسئلة الشائعة",
-                "TermsAndConditions": "الشروط والأحكام",
-                "SupportPolicy": "سياسة الدعم",
-                "Privacy": "الخصوصية"
-            }
-        },
-        "TeamSolutions": {
-            "title": "فريق التواصل"
-      
-        }
+    "TeamSolutions": {
+      "title": "فريق التواصل"
     }
-
+  },
+  "AboutUsPages": {
+    "title": " من نحن",
+    "Welcome": "مرحبًا بكم في ",
+    "subTille": "وجهتكم الموثوقة لجميع ما يتعلق بالسيارات. نفخر بتقديم خدمات استثنائية وعرض مجموعة واسعة من المركبات التي تناسب كل أسلوب حياة وميزانية."
+  },
+  "AllCar": {
+    "title": " انواع السيارات"
+  },
+  "ContactUsPages": {
+    "title": "اتصل بنا بسرعة",
+    "Button": "إرسال",
+    "Call": "اتصل بنا",
+    "Woek": "ساعات العمل",
+    "Location": "موقعنا"
+  }
 }

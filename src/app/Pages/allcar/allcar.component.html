@@ -6,8 +6,8 @@
     <div class="showCar bg-light p-2 my-3 rounded-3">
 
         <div class="headerCar d-flex justify-content-between p-2 align-items-center">
-            <h2>Car Type</h2>
-            <div class="sealct d-flex  gap-5 ">
+          <h2>{{"AllCar.title" |translate}}</h2>
+          <div class="sealct d-flex  gap-5 ">
                 <select class="input-cal input-base inputFloating" (change)="onBodySelect($event)">
                     <option value=""  selected>All Bodys</option>
                     @for (Body of Bodys; track Body.id) {
