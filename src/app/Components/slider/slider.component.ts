@@ -22,7 +22,7 @@ export class SliderComponent implements OnInit {
     pullDrag: false,
     rtl:true,
     autoplay:true,
-    autoplayTimeout:1800,
+    autoplayTimeout:7000,
     autoplayHoverPause: true,
     dots: false,
     navSpeed: 1400,

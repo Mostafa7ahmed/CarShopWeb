@@ -35,7 +35,7 @@ export class CartypeComponent implements OnInit{
       touchDrag: true,
       pullDrag: true,
       autoplay:true,
-      autoplayTimeout:2800,
+      autoplayTimeout:10000,
       autoplayHoverPause: true,
       dots: true,
       navSpeed: 1400,

@@ -1,3 +1,12 @@
+<div class="contact  px-5 d-flex justify-content-between align-items-center">
+  <a href="tel:+971565555471" class="p-3  text-center text-white d-inline-block rounded-2">
+    اتصل بينا <i class="fa fa-phone mx-2"></i>
+</a>
+
+<a href="https://wa.me/971565555471?text=مرحبا%20أريد%20التحدث%20معك" class="p-3  rounded-2 text-center text-white d-inline-block">تواصل معانا <i class="fa-brands fa-whatsapp mx-2"></i>
+</a>
+</div>
+
 @if (brands.length >0 ) {
     <section class=" slider my-5">
         <h3 class="text-center mb-5"> {{"Brand.Brands" | translate}}</h3>
@@ -5,7 +14,7 @@
           @for ( brand of brands ; track brand.id) {
             <ng-template carouselSlide >
                 <a [routerLink]="['/car-type',brand.name]">
-                    <div class="category mx- 3 p-2  shadow-sm">
+                    <div class="category  p-2  shadow-sm">
                         <img [src]="brand.image" [alt]="brand.name"  class="w-100 " height="150px">
     
                     </div>
