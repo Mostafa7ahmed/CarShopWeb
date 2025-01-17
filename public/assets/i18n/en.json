@@ -65,6 +65,13 @@
         "Woek":"Work Hours",
         "Location":"We Are Here"
 
+    },
+    "carDelalils" :{
+        "Daily":"Daily",
+        "Weekly":"Weekly",
+        "Month":"Month",
+        "Color":"Color",
+        "Body":"Body"
     }
 
 

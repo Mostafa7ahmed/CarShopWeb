@@ -1,8 +1,21 @@
 <div class="cardetails d-flex gap-5 p-3 ">
     <div class="left w-50">
-        <img [src]="car.images" width="100%" alt="" class="rounded-4" loading="lazy">
 
+        <owl-carousel-o [options]="customOptions">
 
+            @for ( carDelais of car.images ; track $index) {
+                <ng-template carouselSlide >
+    
+                  
+                    <img [src]="carDelais"  alt="" width="100%" class="rounded-4" loading="lazy">
+               
+            
+                  </ng-template>
+              
+            }
+        
+          </owl-carousel-o>
+    
 
     </div>
     <div class="right p-4 rounded-3  flex-grow-1 bg-light">
@@ -20,24 +33,24 @@
 
      <div class="Content">
         <div   class="d-flex justify-content-between align-items-center my-3 mt-5">
-            <h4>Daily</h4>
+            <h4>{{"carDelalils.Daily" | translate}}</h4>
             <h5>{{car.price_day}}/Day AED</h5>
 
         </div>
         <div   class="d-flex justify-content-between align-items-center my-3 mt-5">
-            <h4>Weekly</h4>
+            <h4>{{"carDelalils.Weekly" | translate}}</h4>
             <h5 class="my-3">{{car.price_week}}/Week AED</h5>
 
         </div>
         <div   class="d-flex justify-content-between align-items-center my-5 ">
-            <h4>Month</h4>
+            <h4>{{"carDelalils.Month" | translate}}</h4>
             <h5 class="my-3">{{car.price_month}}/Month AED</h5>
 
         </div>
 
         <div class="d-flex justify-content-between align-items-center flex-wrap mb-5">
-          <p>Color: <span>{{car.color}}</span></p>
-          <p>Body: <span>{{car.body}}</span></p>
+          <p>{{"carDelalils.Color" | translate}}: <span>{{car.color}}</span></p>
+          <p>{{"carDelalils.Body" | translate}}: <span>{{car.body}}</span></p>
         </div>
         <div class="icons d-flex justify-content-between align-items-center gap-2">
           <p><i class="fa-solid fa-car mx-2"></i> <span>{{car.brand}}</span></p>
