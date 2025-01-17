@@ -63,7 +63,10 @@
         "Button":"Send",
         "Call":"Call Us",
         "Woek":"Work Hours",
-        "Location":"We Are Here"
+        "Location":"We Are Here",
+        "availableTime": "The available time to contact us is from 3:00 PM to 12:00 AM"
+
+
 
     },
     "carDelalils" :{
