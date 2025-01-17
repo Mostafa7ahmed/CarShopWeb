@@ -1,0 +1,51 @@
+{
+    "navbar":{
+        "Home" : "الصفحه الرئيسه",
+        "About" :" من نحن",
+        "CarType":"انواع السيارت",
+        "ContactUS":"تواصل معانا",
+        "lang" :"ع"
+    },
+    "Brand":{
+        "Brands":"العلامات التجارية المتميزة"
+        
+    },
+    "Bodys":{
+        "Body":"حجم السيارت"
+        
+    },
+    "Car":{
+        "car":" متاح الآن للإيجار"
+        
+    },
+    "Footer": {
+        "Subscribe": {
+            "imageAlt": "شعار الموقع",
+            "placeholder": "البريد الإلكتروني",
+            "button": "اشترك"
+        },
+        "Pages": {
+            "title": "الصفحات",
+            "links": {
+                "Home": "الرئيسية",
+                "AboutUs": "من نحن",
+                "CarTypes": "أنواع السيارات",
+                "ContactUs": "اتصل بنا"
+            }
+        },
+        "Help": {
+            "title": "المساعدة",
+            "links": {
+                "FAQ": "الأسئلة الشائعة",
+                "TermsAndConditions": "الشروط والأحكام",
+                "SupportPolicy": "سياسة الدعم",
+                "Privacy": "الخصوصية"
+            }
+        },
+        "TeamSolutions": {
+            "title": "فريق التواصل"
+      
+        }
+    }
+
+}

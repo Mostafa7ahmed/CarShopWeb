@@ -1,6 +1,6 @@
 @if (brands.length >0 ) {
     <section class=" slider my-5">
-        <h3 class="text-center mb-5"> Premium Brands</h3>
+        <h3 class="text-center mb-5"> {{"Brand.Brands" | translate}}</h3>
         <owl-carousel-o [options]="customOptions">
           @for ( brand of brands ; track brand.id) {
             <ng-template carouselSlide >

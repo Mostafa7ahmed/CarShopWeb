@@ -3,11 +3,12 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 import { Component, inject, OnInit } from '@angular/core';
 import { BrandService } from '../../Core/services/brand.service';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-slider',
   standalone: true,
-  imports: [CarouselModule , RouterLink],
+  imports: [CarouselModule , RouterLink , TranslateModule],
   templateUrl: './slider.component.html',
   styleUrl: './slider.component.scss'
 })
@@ -21,10 +22,10 @@ export class SliderComponent implements OnInit {
     pullDrag: false,
     rtl:true,
     autoplay:true,
-    autoplayTimeout:1000,
+    autoplayTimeout:1800,
     autoplayHoverPause: true,
     dots: false,
-    navSpeed: 700,
+    navSpeed: 1400,
     navText: ['', ''],
     responsive: {
       0: {

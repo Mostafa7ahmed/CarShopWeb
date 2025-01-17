@@ -1,6 +1,6 @@
 <div class="typeCar my-5 bg-light">
     
-    <h3 class="text-center mt-5 p-5">SUVs For Rent in Dubai</h3>
+  <h3 class="text-center mb-5"> {{"Car.car" | translate}}</h3>
 
     <div class="cards">
 
@@ -9,10 +9,10 @@
             @for ( car of carType ; track car.id) {
                 <ng-template carouselSlide >
     
-                    <a [routerLink]="['/car-details', car.id]"  class="card p-3 shadow-sm  mx-4 mb-3">
-                        <img [src]="car.images" alt="">
+                    <div   class="card p-3 shadow-sm  mx-4 mb-3 position-relative">
+                        <img [src]="car.images[2]" alt="">
                         <div class="Content p-3">
-                            <h2 class="mt-2">{{car.name}}</h2>
+                            <h2 class="mt-2">{{car.name | splittext : 2}}</h2>
                             <h4>{{car.price_day}}/Day AED</h4>
                             <div class="d-flex justify-content-between align-items-center flex-wrap my-2">
                               <h5>{{car.price_week}}/Week AED</h5>
@@ -26,13 +26,36 @@
                               <p><i class="fa-solid fa-car mx-2"></i> <span>{{car.brand}}</span></p>
                               <p><i class="fa-solid fa-door-closed mx-2"></i> <span>{{car.door_num}}</span></p>
                               <p><i class="fa-solid fa-couch mx-2"></i> <span>{{car.chair_num}}</span></p>
-                            </div>         
+                            </div>  
+                            
+                         <div class="d-flex justify-content-between align-items-center">
+                          <div   class="Icon" [routerLink]="['/car-details', car.id]">
+                            <a >
+                                <i class="fa fa-eye"></i>
+            
+                            </a>
+                          </div>
+                              <div   class="Icon">
+                                <a href="https://wa.me/971565555471?text=مرحبا%20أريد%20التحدث%20معك">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                
+                                </a>
+                            </div>
+                
+                              <div   class="Icon">
+                                <a href="https://www.instagram.com/mourad_motors/">
+                                    <i class="fa-brands fa-instagram"></i>
+                
+                                </a>
+                            </div>
+                         </div>
+                          
                        </div>
 
             
                
             
-                    </a>
+                    </div>
                   </ng-template>
               
             }

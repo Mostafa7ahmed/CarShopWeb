@@ -2,11 +2,12 @@ import { Component, inject, OnInit } from '@angular/core';
 import { Body } from '../../Core/Interface/Body';
 import { BodyService } from '../../Core/services/body.service';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-body',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink , TranslateModule],
   templateUrl: './body.component.html',
   styleUrl: './body.component.scss'
 })

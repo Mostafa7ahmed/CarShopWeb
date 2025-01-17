@@ -3,10 +3,12 @@ import { Component, inject, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Car } from '../../Core/Interface/car';
 import { AllcarService } from '../../Core/services/allcar.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { SplittextPipe } from '../../Core/Pipes/splittext.pipe';
 @Component({
   selector: 'app-cartype',
   standalone: true,
-  imports: [CarouselModule, RouterLink],
+  imports: [CarouselModule, RouterLink, TranslateModule, SplittextPipe],
   templateUrl: './cartype.component.html',
   styleUrl: './cartype.component.scss'
 })
@@ -31,13 +33,15 @@ export class CartypeComponent implements OnInit{
       loop: true,
       mouseDrag: true,
       touchDrag: true,
-      pullDrag: false,
+      pullDrag: true,
       autoplay:true,
-      autoplayTimeout:1000,
+      autoplayTimeout:2800,
       autoplayHoverPause: true,
       dots: true,
-      navSpeed: 700,
+      navSpeed: 1400,
       navText: ['', ''],
+      rtl:true,
+
       responsive: {
         0: {
           items: 1

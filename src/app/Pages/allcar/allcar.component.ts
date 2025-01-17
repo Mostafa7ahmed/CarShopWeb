@@ -6,11 +6,12 @@ import { BrandService } from '../../Core/services/brand.service';
 import { Car } from '../../Core/Interface/car';
 import { Body } from '../../Core/Interface/Body';
 import { Brand } from '../../Core/Interface/Brand';
+import { SplittextPipe } from '../../Core/Pipes/splittext.pipe';
 
 @Component({
   selector: 'app-allcar',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink , SplittextPipe],
   templateUrl: './allcar.component.html',
   styleUrls: ['./allcar.component.scss']
 })

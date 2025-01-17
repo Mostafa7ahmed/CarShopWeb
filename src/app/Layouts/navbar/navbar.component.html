@@ -5,12 +5,18 @@
     </div>
     <div class="rightNav  d-flex  gap-2 align-items-center">
         <ul class="d-flex  "> 
-            <li><a routerLink="/Home" routerLinkActive="active-link">Home</a></li>
-            <li><a routerLink="/about-us" routerLinkActive="active-link">About Us</a></li>
-            <li><a routerLink="/car-type" routerLinkActive="active-link">Car Types</a></li>
-            <li><a routerLink="contact-us" routerLinkActive="active-link">Contact Us</a></li>
+            <li><a routerLink="/Home" routerLinkActive="active-link">{{"navbar.Home" | translate }}</a></li>
+            <li><a routerLink="/about-us" routerLinkActive="active-link">{{"navbar.About" | translate }}</a></li>
+            <li><a routerLink="/car-type" routerLinkActive="active-link">{{"navbar.CarType" | translate }}</a></li>
+            <li><a routerLink="contact-us" routerLinkActive="active-link">{{"navbar.ContactUS" | translate }}</a></li>
+            <li (click)="ToggleLang()" class="cr trans">
+                <a class="dropdown-item text-white">{{ "navbar.lang" | translate }}</a>
+              </li>
+
+          
    
         </ul>
+        
         <div class="icon">
             <i class="fa-solid fa-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
         </div>
@@ -29,10 +35,15 @@
 
     <div class="routeLink">
         <ul class="links m-0">
-            <li><a routerLink="/Home" routerLinkActive="active">Home</a></li>
-            <li><a routerLink="/about-us" routerLinkActive="active">About Us</a></li>
-            <li><a routerLink="/car-type" routerLinkActive="active">Car Types</a></li>
-            <li><a routerLink="contact-us" routerLinkActive="active">Contact Us</a></li>
+  
+            <li><a routerLink="/Home" routerLinkActive="active">{{"navbar.Home" | translate }}</a></li>
+            <li><a routerLink="/about-us" routerLinkActive="active">{{"navbar.About" | translate }}</a></li>
+            <li><a routerLink="/car-type" routerLinkActive="active">{{"navbar.CarType" | translate }}</a></li>
+            <li><a routerLink="/contact-us" routerLinkActive="active">{{"navbar.ContactUS" | translate }}</a></li>
+            <li (click)="ToggleLang()" class="cr trans">
+                <a class="dropdown-item text-white">{{ "navbar.lang" | translate }}</a>
+              </li>
+
         </ul>
     </div>
 
