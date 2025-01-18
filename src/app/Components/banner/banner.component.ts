@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
+import { Banner } from '../../Core/Interface/Banner';
+import { BannerService } from '../../Core/services/banner.service';
 
 @Component({
   selector: 'app-banner',
@@ -8,7 +10,7 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.scss'
 })
-export class BannerComponent {
+export class BannerComponent implements OnInit {
      customOptions: OwlOptions = {
        loop: true,
        mouseDrag: true,
@@ -25,7 +27,19 @@ export class BannerComponent {
        items:1,
       }
 
-  brands:number[]=[1,3,4,5];
+      bannerImages:Banner[] =[];
 
+      private _allcar = inject(BannerService)
+      
+        ngOnInit(): void {
+          this.loadData();
+          
+        }
+        async loadData() {
+          this.bannerImages = (await this._allcar.getTableData()).slice(0,8);
+          console.log(this.bannerImages)
+      
+        }
+    
 
 }

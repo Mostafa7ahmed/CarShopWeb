@@ -2,26 +2,18 @@
 
     <div class="slider p-0 m-0 ">
         <owl-carousel-o [options]="customOptions">
+          
+
+           @for (bannerImage of bannerImages; track bannerImage.id) {
             <ng-template carouselSlide>
 
-                <img src="Images/slider 1.png" alt=""  loading="lazy">
+                <img [src]="bannerImage.image" alt=""  loading="lazy">
 
 
             </ng-template>
 
-            <ng-template carouselSlide>
 
-                <img src="Images/slider 2.png" alt=""  loading="lazy">
-
-            </ng-template>
-
-
-            <ng-template carouselSlide>
-
-                <img src="Images/slider 3.png" alt=""  loading="lazy">
-
-
-            </ng-template>
+           }
 
         </owl-carousel-o>
     </div>
