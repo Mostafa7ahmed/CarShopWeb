@@ -77,10 +77,11 @@
         "Body":"Body"
     },
     "contact":{
-        "textPhone":"Call Us",
-        "textWhatsapp":"Chat with Us"
+        "textPhone":"Call ",
+        "textWhatsapp":"whatsapp"
 
-    }
- 
+    },
+    "notfound":"Not Found Car"
+   
 
 }

@@ -52,7 +52,7 @@
     "title": " انواع السيارات"
   },
   "ContactUsPages": {
-    "title": "اتصل بنا بسرعة",
+    "title": "اتصل بنا سريعا",
     "Button": "إرسال",
     "Call": "اتصل بنا",
     "Woek": "ساعات العمل",
@@ -68,7 +68,8 @@
     "Body": "الهيكل"
   },
   "contact": {
-    "textPhone": "اتصل بينا",
-    "textWhatsapp": "تواصل معانا"
-  }
+    "textPhone": "الاتصال ",
+    "textWhatsapp": " واتساب"
+  },
+  "notfound":"  لا يوجد سيارات"
 }

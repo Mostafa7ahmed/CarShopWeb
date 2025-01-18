@@ -93,9 +93,14 @@
  color: #fff;
 
 }
+
 @media (max-width: 600px){
     .card{
     
         width: 90% !important;
+    }
+    .notFound img{
+        width: 90% !important;
+
     }
 }
